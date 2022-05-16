@@ -111,9 +111,6 @@ img {
 }
 
 .menu-link {
-    /* padding-top: 32px; */
-    /* padding-bottom: 32px; */
-
     color: var(--primary-font-color);
     font-weight: 500;
     line-height: 1.14;
@@ -123,10 +120,34 @@ img {
 .current {
     color: var(--accent-color);
 }
-
-.menu-item,
-.contact-item{
+.menu-item {
     margin-right: 50px;
+}
+.contact-item {
+    display: flex;
+    outline: 1px solid blue;
+
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+
+}
+.header-contact {
+    display: block;
+}
+
+.header-contact::before {
+    /* display: inline-block; */
+    display: inline-block;
+    margin-right: 10px;
+
+    content: "";
+    outline: 1px solid red;
+    height: 26px;
+    width: 16px;
+
+    background-image: url(../images/icons/envelope.svg);
+    background-repeat: no-repeat;
 }
 
 .menu-item:last-child,
@@ -141,8 +162,6 @@ img {
 }
 
 .header-contact {
-    /* padding-top: 32px; */
-    /* padding-bottom: 32px; */
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -160,7 +179,7 @@ img {
     background-color: var(--background-color-secondary);
 }
 
-.header-container {
+.hero-container {
     max-width: 696px;
     text-align: center;
 }
@@ -201,7 +220,8 @@ img {
 /* 
 .advantages-item {
     flex-basis: calc((100% - 30px) / 4);
-} */
+} 
+*/
 
 .advantages-item {
     margin-right: 30px;
@@ -211,9 +231,36 @@ img {
     margin-right: 0;
 }
 
+.advantages-item::before {
+    display: block;
+    height: 120px;
+    background-size: 70px 70px;
+    background-position: center;
+    content: "";
+    margin-bottom: 30px;
+    background-color: var(--background-color-additional);
+    background-image: url(../images/icons/antena\ 1.svg);
+    background-repeat: no-repeat;
+}
+
+.advantages-item:nth-child(2)::before {
+    background-image: url(../images/icons/clock\ 1.svg);
+}
+.advantages-item:nth-child(3)::before {
+    background-image: url(../images/icons/diagram\ 1.svg);
+}
+.advantages-item:nth-child(4)::before {
+    background-image: url(../images/icons/astronaut\ 1.svg);
+}
+
+.advantages-item:last-child {
+    margin-right: 0;
+}
+
 .advantages-title {
     margin-bottom: 10px;
     color: var(--primary-font-color);
+    font-size: inherit;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -235,6 +282,10 @@ img {
 }
 
 .what-we-do-item {
+    margin-right: 30px;
+}
+
+.what-we-do-item:last-child {
     margin-right: 0;
 }
 
@@ -247,11 +298,16 @@ img {
     justify-content: center;
 }
 
+.team-text-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-item {
     margin-right: 30px;
     background-color: var(--background-color-primary);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.02);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
