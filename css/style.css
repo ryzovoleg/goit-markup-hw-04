@@ -111,6 +111,8 @@ img {
 }
 
 .menu-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-font-color);
     font-weight: 500;
     line-height: 1.14;
@@ -120,34 +122,9 @@ img {
 .current {
     color: var(--accent-color);
 }
-.menu-item {
-    margin-right: 50px;
-}
+.menu-item,
 .contact-item {
-    display: flex;
-    outline: 1px solid blue;
-
-    align-items: center;
-    justify-content: center;
     margin-right: 50px;
-
-}
-.header-contact {
-    display: block;
-}
-
-.header-contact::before {
-    /* display: inline-block; */
-    display: inline-block;
-    margin-right: 10px;
-
-    content: "";
-    outline: 1px solid red;
-    height: 26px;
-    width: 16px;
-
-    background-image: url(../images/icons/envelope.svg);
-    background-repeat: no-repeat;
 }
 
 .menu-item:last-child,
@@ -162,6 +139,8 @@ img {
 }
 
 .header-contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -225,32 +204,6 @@ img {
 
 .advantages-item {
     margin-right: 30px;
-}
-
-.advantages-item:last-child {
-    margin-right: 0;
-}
-
-.advantages-item::before {
-    display: block;
-    height: 120px;
-    background-size: 70px 70px;
-    background-position: center;
-    content: "";
-    margin-bottom: 30px;
-    background-color: var(--background-color-additional);
-    background-image: url(../images/icons/antena\ 1.svg);
-    background-repeat: no-repeat;
-}
-
-.advantages-item:nth-child(2)::before {
-    background-image: url(../images/icons/clock\ 1.svg);
-}
-.advantages-item:nth-child(3)::before {
-    background-image: url(../images/icons/diagram\ 1.svg);
-}
-.advantages-item:nth-child(4)::before {
-    background-image: url(../images/icons/astronaut\ 1.svg);
 }
 
 .advantages-item:last-child {
@@ -384,11 +337,11 @@ color: var(--description-font-color);
 .portfolio-nav-item {
     margin-right: 8px;
 }
- .portfolio-nav-item:last-child {
+.portfolio-nav-item:last-child {
      margin-right: 0;
  }
 
- .portfolio-btn {
+.portfolio-btn {
      padding: 6px 22px;
      background-color: var(--background-color-additional);
      border-radius: 4px;
@@ -435,6 +388,7 @@ color: var(--description-font-color);
 
 .project-name {
     margin-bottom: 4px;
+
     color: var(--primary-font-color);
     font-weight: 700;
     font-size: 18px;
