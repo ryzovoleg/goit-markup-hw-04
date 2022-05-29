@@ -34,10 +34,8 @@ img {
 
 .container {
     width: 1200px;
-
     padding-left: 15px;
     padding-right: 15px;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -201,7 +199,6 @@ img {
     flex-basis: calc((100% - 30px) / 4);
 } 
 */
-
 .advantages-item {
     margin-right: 30px;
 }
@@ -296,7 +293,6 @@ color: var(--description-font-color);
 .logo-footer {
     display: inline-block;
     margin-bottom: 20px;
-
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -388,7 +384,6 @@ color: var(--description-font-color);
 
 .project-name {
     margin-bottom: 4px;
-
     color: var(--primary-font-color);
     font-weight: 700;
     font-size: 18px;
