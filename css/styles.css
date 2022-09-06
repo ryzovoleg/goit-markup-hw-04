@@ -46,7 +46,7 @@ img {
 
 .list {
     list-style: none;
-    padding: 0%;
+    padding: 0;
     margin: 0;
 }
 
@@ -547,7 +547,7 @@ fill: currentColor;
 
 .project-name {
     margin-bottom: 4px;
-    
+
     color: var(--primary-font-color);
     font-weight: 700;
     font-size: 18px;
