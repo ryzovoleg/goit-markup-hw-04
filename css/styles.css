@@ -1,9 +1,9 @@
 :root {
-    --main-font: 'Roboto', sans-serif;
-    --logo-font: 'Raleway', sans-serif;
+    --main-font: "Roboto", sans-serif;
+    --logo-font: "Raleway", sans-serif;
     --main-font-size: 14px;
     --primary-font-color: #212121;
-    --secondary-font-color: #FFFFFF;
+    --secondary-font-color: #ffffff;
     --description-font-color: #757575;
     --accent-color: #2196F3;
     --icon-color: #afb1b8;
